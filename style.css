@@ -1,0 +1,79 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: transparent; /* key for OBS */
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.chat-panel {
+  position: absolute;
+  left: 0; top: 0;
+  width: 280px; height: 100%;
+  background: rgba(10, 10, 20, 0.85);
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+.chat-header {
+  padding: 14px 16px;
+  font-size: 11px;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.chat-messages {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-msg { font-size: 13px; line-height: 1.5; }
+.chat-msg .name { font-weight: 600; margin-right: 6px; }
+.chat-msg .text { color: rgba(255,255,255,0.75); }
+.name.mod   { color: #5dcaa5; }
+.name.sub   { color: #7f77dd; }
+.name.viewer{ color: #85b7eb; }
+
+.webcam-box {
+  position: absolute;
+  top: 20px; right: 20px;
+  width: 380px; height: 214px;
+  border: 2px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  background: rgba(0,0,0,0.3);
+}
+
+.webcam-label {
+  position: absolute;
+  bottom: 8px; left: 10px;
+  font-size: 11px;
+  color: rgba(255,255,255,0.5);
+  background: rgba(0,0,0,0.6);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.live-badge {
+  position: absolute;
+  top: 20px; left: 300px;
+  background: #c0392b;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.live-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: white;
+}
