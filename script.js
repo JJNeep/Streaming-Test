@@ -1,4 +1,5 @@
 document.body.contentEditable = true
+document.body.setAttribute('spellcheck', 'false');
 
 // Connect to StreamElements for live chat
 const se = new EventSource('https://your-streamelements-widget-url');
