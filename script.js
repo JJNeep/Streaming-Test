@@ -1,3 +1,5 @@
+document.body.contentEditable = true
+
 // Connect to StreamElements for live chat
 const se = new EventSource('https://your-streamelements-widget-url');
 
